@@ -1,0 +1,8 @@
+Feature: Search and Place the Order for Products
+
+Scenario: Search Experience for Product Search in Both Home and Offers page
+
+Given user is on GreenKart landing page
+When user searched for short name "Tom" and extracted actual name of product
+Then user searched for "Tom" short name in offers page
+And validate product name in offers page matches with Landing page

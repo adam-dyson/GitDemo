@@ -1,0 +1,43 @@
+package stepDefinitions;
+
+import java.util.Iterator;
+import java.util.Set;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import pageObjects.OffersPage;
+import utils.TestContextSetup;
+
+public class OfferPageStepDefintions {
+	TestContextSetup testContext;
+	public OfferPageStepDefintions(TestContextSetup testContext) {
+		this.testContext = testContext;
+	}
+	
+    @Then("user searched for {string} short name in offers page")
+    public void user_searched_for_something_short_name_in_offers_page(String searchTerm) throws Throwable {
+    	switchToOffersPage();
+    	OffersPage offersPage = new OffersPage(testContext.driver);
+//		testContext.driver.findElement(By.xpath("//input[@type='search']")).sendKeys(searchTerm);
+//		testContext.ec.visibilityOf(testContext.driver.findElement(By.cssSelector("tr td:nth-child(1)")));
+    	testContext.offerPageProductName = offersPage.getProductName();
+    	
+    }
+
+    @And("^validate product name in offers page matches with Landing page$")
+    public void validate_product_name_in_offers_page_matches_with_landing_page() throws Throwable {
+    	Assert.assertEquals(testContext.offerPageProductName, testContext.landingPageProductName);
+    }
+    
+    public void switchToOffersPage() {
+    	if(testContext.driver.getCurrentUrl().equalsIgnoreCase("https://rahulshettyacademy.com/seleniumPractise/#/")) {
+	    	testContext.driver.findElement(By.linkText("Top Deals")).click();
+			Set<String> s1 = testContext.driver.getWindowHandles();
+			Iterator<String> i1 = s1.iterator();
+			String parentWindow = i1.next();
+			String childWindow = i1.next();
+			testContext.driver.switchTo().window(childWindow);
+    	}
+    }
+}

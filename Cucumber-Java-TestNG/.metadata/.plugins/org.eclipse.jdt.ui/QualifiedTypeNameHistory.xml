@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="io.opentelemetry.exporter.logging.SystemOutLogExporter"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="pageObjects.OffersPage"/>
+    <fullyQualifiedTypeName name="pageObjects.LandingPage"/>
+    <fullyQualifiedTypeName name="pageObjects.PageObjectManager"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.After"/>
+    <fullyQualifiedTypeName name="utils.TestContextSetup"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.And"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="pageObjects.CartPage"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.Scenario"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+    <fullyQualifiedTypeName name="com.mongodb.MapReduceCommand.OutputType"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.AfterStep"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+</qualifiedTypeNameHistroy>

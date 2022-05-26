@@ -1,0 +1,8 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+
+public final class LandingPage {
+	public By search = By.xpath("//input[@type='search']");
+	public By productName = By.cssSelector("h4.product-name");
+}

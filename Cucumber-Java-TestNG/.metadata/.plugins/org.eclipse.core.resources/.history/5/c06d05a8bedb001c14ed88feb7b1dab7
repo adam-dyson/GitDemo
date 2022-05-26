@@ -1,0 +1,17 @@
+package utils;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import pageObjects.PageObjectManager;
+
+public class TestContextSetup {
+	public WebDriver driver;
+	public String landingPageProductName;
+	public String offerPageProductName;
+	public PageObjectManager pageObjectManager;
+	
+	public TestContextSetup() {
+		pageObjectManager = new PageObjectManager(this.driver);
+	}
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="36.999">
+    <testcase classname="Search and Place the Order for Products" name="Search Experience for Product Search in Both Home and Offers page" time="34.948">
+        <system-out><![CDATA[Given user is on GreenKart landing page.....................................passed
+When user searched for short name Tom and extracted actual name of product..passed
+And added "2" items of the selected product to cart.........................passed
+Then user proceeds to Checkout and validate the Tom items in checkout page..passed
+And verify user has ability to enter promo code and place the order.........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search for Various Products on Landing and Offers page" name="Search Experience for Product Search in Both Home and Offers page" time="36.164">
+        <system-out><![CDATA[Given user is on GreenKart landing page.....................................passed
+When user searched for short name Tom and extracted actual name of product..passed
+Then user searched for Tom short name in offers page........................passed
+And validate product name in offers page matches with Landing page..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search for Various Products on Landing and Offers page" name="Search Experience for Product Search in Both Home and Offers page 2" time="36.665">
+        <failure message="expected [Beetroot] but found [No data]" type="java.lang.AssertionError"><![CDATA[Given user is on GreenKart landing page.....................................passed
+When user searched for short name Beet and extracted actual name of product.passed
+Then user searched for Beet short name in offers page.......................passed
+And validate product name in offers page matches with Landing page..........failed
+
+StackTrace:
+java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.OfferPageStepDefintions.validate_product_name_in_offers_page_matches_with_landing_page(OfferPageStepDefintions.java:31)
+	at ✽.validate product name in offers page matches with Landing page(file:///C:/Users/adam.dyson/OneDrive%20-%20Magenic/Documents/Projects/Udemy%20Course%20Work/Cucumber-Java-TestNG/CucumberFramework/src/test/java/features/searchProduct.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
